@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subway 써브웨이</title>
+    <link rel="shortcut icon" href="icons/subway_favicon.ico">
+    <style>
+* { margin: 0; padding: 0; list-style: none;  }
+a { text-decoration: none; color:inherit;}
+
+header { width: 100%; height: 165px; background-color: #fff; border-top: 5px solid #009223;border-bottom: 1px solid #ddd; }
+#header1 { width: 1170px; height: 100px; background-color: yellow; margin: auto;position: relative; }
+#header1_menu { width: 200px; height: 40px; background-color:red; position: absolute; right: 0; top: 30px;  }
+#header2 { width: 1170px; height: 65px;background-color: aqua; margin: auto; }
+#slide { width: 100%; height: 490px;border: 1px solid red; position: relative; }
+#slide_img { width: 100%; height: 440px; background:url(images/main_PC_1920x440_02_20220531024759727.jpg) center no-repeat; }
+#slide_bt { width: 1170px; height: 490px; border: 2px solid blue; position: absolute; left: 0; right: 0; top: 0;  margin: auto;  }
+#slide_bt_box { width: 600px; height: 120px; background-color: yellow; 
+position: absolute; right: 0; bottom: 0; }
+#slide_bt_button { float: right;  }
+#slide_bt_button li { width: 10px; height: 10px; border-radius: 10px; background-color: green; float: left; margin:5px; }
+#slide_bt_button li:nth-child(1) { width: 30px; background-color:red;}
+#slide_bt_leftbox { width: 300px; height: 80px; background: #ffce32 url(icons/icon_utill_global.png) 80px center no-repeat; float: left; border-radius:30px 0 0 0; clear: both; margin-top: 20px; font-size: 20px; text-align: center; line-height: 80px; font-weight: 900; padding-left: 30px; box-sizing: border-box; }
+#subway_menu { width: 1170px; height: 450px; background-color: aqua; margin: auto; margin-top: 100px;}
+#subway_menu_title { width: 100%; height: 60px; background-color: green; }
+#subway_menu_title h2 { height: 60px; line-height: 60px; background:url(icons/titlie_bg.png) 0 center no-repeat;  padding-left: 30px; float: left; }
+#subway_menu_title ul { width: 200px; height: 30px; background-color:red; float: right; margin-top: 15px;  }
+#subway_menu_product { width: 100%; height: 300px; clear: both; }
+#subway_menu_product li { width: 23%; margin:1%; height: 300px; float: left; background-color: #ddd; }
+
+
+
+
+
+#news_wrap { width: 100%; height: 790px; background:url(icons/bg_content.gif) repeat; margin-top: 100px; overflow: hidden;  }
+
+#news_wrap>ul { width: 1170px; height: 630px; margin: auto; margin-top: 57px;border: 1px solid #000; position: relative;  }
+#news_wrap>ul>li:nth-child(1) { width: 400px; height: 300px; background:url(images/bg_utilization.png);  }
+#news_wrap>ul>li:nth-child(2) { width: 825px; height: 300px; background:url(images/img_subway_history.png); position: absolute; right: -56px; top: 0; }
+#news_wrap>ul>li:nth-child(3) { width: 870px; height: 300px; float: left; background-color:green; margin-top: 30px; border-radius:30px 0 30px 0;}
+#news_wrap>ul>li:nth-child(4) { width: 270px; height: 300px; float: right; background: url(images/banner_20220523033233036.png); margin-top: 30px; border-radius: 0 30px 0 30px; }
+#icon { width: 100%; height: 150px; background-color:yellow; overflow: hidden; }
+#icon>ul { width: 1170px; height: 130px; margin: auto; margin-top: 10px; border: 1px solid #000; text-align: center;   }
+#icon>ul>li { width: 260px; height: 70px; border: 1px solid #000;  
+    display: inline-block; margin-top: 30px;   }
+.icon_img { width: 70px; height: 70px; float: left;   }
+#icon>ul>li:nth-child(1) .icon_img { background:url(icons/icon_quickmenu.png) 0 0 no-repeat;}
+#icon>ul>li:nth-child(2) .icon_img {background:url(icons/icon_quickmenu.png) -70px 0 no-repeat;}
+#icon>ul>li:nth-child(3) .icon_img {background:url(icons/icon_quickmenu.png) -140px 0 no-repeat;}
+#icon>ul>li:nth-child(4) .icon_img {background:url(icons/icon_quickmenu.png) -210px 0 no-repeat;}
+.icon_textbox { width: 180px; height: 60px; float: right; margin: 5px; background-color:blue;  }
+
+footer { background-color: #292929; }
+#footer1 { width: 100%; height: 60px; border-bottom: 1px solid #ccc;}  
+#footer2 { width: 100%; height: 90px; } 
+#footer1_box { width:1170px; height:60px; background-color:#999; margin:auto; }
+#footer2_box { width:1170px; height:90px; background-color:#555; margin:auto;}
+#slide>li>a { width: 100%; height: 100px; display: block;}
+    </style></head><body>
+    <header>
+        <!-- a태그는 인라인태그. 인라인태그가 블록태그를 감싸지않는다. -->
+        <div id="header1">
+            <h1 id="logo"><a href="#"><img src="" alt=""></a></h1> 
+            <ul id="header1_menu">
+                <li><a href="#">회원가입</a></li>
+                <li>장바구니</li>
+                <li></li>
+            </ul>
+        </div> 
+        <div id="header2">
+            ul#header2_menu>li*6
+        </div>
+    </header>
+<!--  -->
+    <div id="slide">
+        <div id="slide_img">
+            <li><a href="">
+
+            </a></li>
+        </div> 
+        <div id="slide_bt">
+            <div id="slide_bt_box">
+               <ul id="slide_bt_button">
+                   <li></li>
+                   <li></li>
+                   <li></li>
+               </ul>      
+               <div id="slide_bt_leftbox">
+                매장찾기
+               </div>     
+               <div id="slide_bt_rightbox">                   
+                가맹신청ㆍ문의
+               </div>          
+            </div>    
+        </div>
+    </div>
+<!--  -->
+<div id="subway_menu">
+    <div id="subway_menu_title">
+        <h2>Subway's Menu</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div> 
+    <ul id="subway_menu_product">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+<!--  -->
+<div id="news_wrap">
+    <ul>
+        <li>h3+button</li>
+        <li>h3+button</li>
+        <li>
+            div#news_box3_left>h3+p 
+            div#news_box3_right>p*3+h5
+        </li>
+        <li></li>
+    </ul>
+</div>
+<!--  -->
+<div id="icon">
+    <ul>
+        <li>
+            <div class="icon_img"></div>
+            <div class="icon_textbox">
+                <h4>프랜차이즈</h4>
+                <p>개설절차/투자비용 정보</p>
+            </div> 
+        </li>
+        <li>
+            <div class="icon_img"></div>
+            <div class="icon_textbox">
+                <h4>프랜차이즈</h4>
+                <p>개설절차/투자비용 정보</p>
+            </div> 
+        </li>
+        <li>
+            <div class="icon_img"></div>
+            <div class="icon_textbox">
+                <h4>프랜차이즈</h4>
+                <p>개설절차/투자비용 정보</p>
+            </div> 
+        </li>
+        <li>
+            <div class="icon_img"></div>
+            <div class="icon_textbox">
+                <h4>프랜차이즈</h4>
+                <p>개설절차/투자비용 정보</p>
+            </div> 
+        </li>
+        
+    </ul>
+</div>
+<!--  -->
+<footer>
+    <div id="footer1">
+        <div id="footer1_box">ul>li*5</div>
+    </div>  
+    <div id="footer2">
+        <div id="footer2_box">
+            div#footer2_leftbox 
+            ul#footer2_icon>li*2        
+        </div>
+    </div>
+</footer>
+
+<table>
+    <tr>
+        <td>aaa</td>
+        <td><a href="">aaaasd asd asd as dasd </a> </td>
+        <td>aaa</td>
+    </tr>
+    <tr>
+        <td>sss</td>
+        <td>sss</td>
+        <td>sss</td>cn 
+    </tr>
+</table> 
+</body>
+</html>
